@@ -9,6 +9,9 @@ public class CreateProductDTO {
     private String description;
     private String image;
 
+    public CreateProductDTO() {
+    }
+
     public CreateProductDTO(String name, String price, String description, String image) {
         this.name = name;
         this.price = price;
