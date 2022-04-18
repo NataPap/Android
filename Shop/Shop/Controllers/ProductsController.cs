@@ -40,6 +40,7 @@ namespace Shop.Controllers
         [HttpGet("list")]
         public IActionResult Index()
         {
+            Thread.Sleep(2000);
             var list = _context.Products
                     .Select(x => _mapper.Map<ProductItemViewModel>(x))
                     .ToList();

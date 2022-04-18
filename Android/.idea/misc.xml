@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/layout/activity_main.xml" value="0.21331521739130435" />
+        <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/layout/activity_products.xml" value="0.19701086956521738" />
         <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/layout/card_product.xml" value="0.18478260869565216" />
+        <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/layout/progress_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/AndroidVPD912-main/Android/app/src/main/res/menu/main.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/2022/11.Android- VPD912/1.Begin/App/Android/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
