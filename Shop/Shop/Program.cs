@@ -123,10 +123,12 @@ app.UseStaticFiles(new StaticFileOptions
     FileProvider = new PhysicalFileProvider(dir),
     RequestPath = "/images"
 });
-
+app.UseAuthentication();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.SeedData();
 
 app.Run();

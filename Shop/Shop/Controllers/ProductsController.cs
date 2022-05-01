@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Data;
@@ -22,6 +23,8 @@ namespace Shop.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize]
+        [RequestSizeLimit (100*1024*1024)]//set max to 100Mb
         public IActionResult Create(CreateProductViewModel model)
         {
             var img = ImageWorker.FromBase64StringToImage(model.Image);

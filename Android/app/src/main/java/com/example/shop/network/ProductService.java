@@ -1,6 +1,7 @@
 package com.example.shop.network;
 
 import com.example.shop.constants.Urls;
+import com.example.shop.network.interceptors.JWTInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +18,7 @@ public class ProductService {
                 .connectTimeout(120, TimeUnit.SECONDS)
                 .writeTimeout(120, TimeUnit.SECONDS)
                 .readTimeout(130, TimeUnit.SECONDS)
+                .addInterceptor(new JWTInterceptor())
                 .build();
         retrofit = new Retrofit.Builder()
                 .client(okHttpClient)
