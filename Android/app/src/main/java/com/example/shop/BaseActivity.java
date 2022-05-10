@@ -56,6 +56,17 @@ public class BaseActivity extends AppCompatActivity {
                     System.out.println("Problem "+ ex.getMessage());
                 }
                 return true;
+
+            case R.id.m_register:
+                try {
+                    intent = new Intent(BaseActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                catch(Exception ex) {
+                    System.out.println("Problem "+ ex.getMessage());
+                }
+                return true;
             case R.id.m_logout:
                 try {
                     HomeApplication.getInstance().deleteToken();
